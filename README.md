@@ -1,36 +1,136 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sales Dashboard
 
-## Getting Started
+[English](#english) | [Português](#português)
 
-First, run the development server:
+---
+<br>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# English
+
+## About the Project
+This project is a sales dashboard, developed to visually and efficiently display sales data. It uses Next.js and Tailwind CSS to create a responsive and modern interface.
+
+## Technologies Used
+- **Next.js**: A React framework for server-side and static rendering.
+- **Tailwind CSS**: A utility-first CSS framework for styling.
+- **TypeScript**: A superset of JavaScript for static typing and development safety.
+
+## Prerequisites
+- Node.js >= 16.x
+- Package manager (npm or yarn)
+
+## How to Run Locally
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/mfthaina/sales-dashboard.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd sales-dashboard
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+   The project will be available at [http://localhost:3000](http://localhost:3000).
+
+5. To build for production:
+   ```bash
+   npm run build
+   ```
+   And start the production server:
+   ```bash
+   npm start
+   ```
+
+## Project Structure
+
 ```
+src/
+  app/
+    layout.tsx   - Main application layout.
+    page.tsx     - Dashboard home page.
+  components/
+    sales/
+      index.tsx  - Components related to the sales module.
+  lib/           - Configurations and helper libraries.
+```  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
+The project can be easily deployed using platforms like Render, Vercel, or any Node.js-compatible service. Make sure to configure the required environment variables, if applicable.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
+<br>
 
-## Learn More
+# Português
 
-To learn more about Next.js, take a look at the following resources:
+## Sobre o projeto
+Este projeto é um dashboard de vendas, desenvolvido com o objetivo de exibir informações de vendas de forma visual e organizada. Ele utiliza a tecnologia Next.js com Tailwind CSS para a criação de uma interface responsiva e moderna.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tecnologias utilizadas
+- **Next.js**: Framework para React que permite renderização no lado do servidor e estático.
+- **Tailwind CSS**: Um framework CSS utilitário para estilização.
+- **TypeScript**: Superset do JavaScript para tipagem estática e segurança no desenvolvimento.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Pré-requisitos
+- Node.js >= 16.x
+- Gerenciador de pacotes (npm ou yarn)
 
-## Deploy on Vercel
+## Como executar localmente
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/mfthaina/sales-dashboard.git
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd sales-dashboard
+   ```
+
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+4. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+   O projeto estará disponível em [http://localhost:3000](http://localhost:3000).
+
+5. Para criar uma build de produção:
+   ```bash
+   npm run build
+   ```
+   E iniciar o servidor de produção:
+   ```bash
+   npm start
+   ```
+
+## Estrutura do projeto
+
+```
+src/
+  app/
+    layout.tsx   - Layout principal do aplicativo.
+    page.tsx     - Página inicial do dashboard.
+  components/
+    sales/
+      index.tsx  - Componentes relacionados ao módulo de vendas.
+  lib/           - Configurações e bibliotecas auxiliares.
+```  
+
+## Deploy
+O projeto pode ser facilmente implantado utilizando plataformas como Render, Vercel ou qualquer serviço compatível com Node.js. Certifique-se de configurar as variáveis de ambiente necessárias, caso existam.
+
+
