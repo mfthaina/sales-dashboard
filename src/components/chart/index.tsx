@@ -37,9 +37,9 @@ const ChartOverview = () => {
       <CardContent>
         <ChartContainer
           config={chartConfig}
-          className="min-h-[200px] items-center justify-center"
+          className="min-h-[100px] items-center justify-center"
         >
-          <BarChart width={100} height={50} data={chartData}>
+          <BarChart width={50} height={50} data={chartData}>
             <CartesianGrid vertical={false} />
             <XAxis
               dataKey={"month"}
