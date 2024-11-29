@@ -9,9 +9,9 @@ const ChartOverview = () => {
     { month: "January", desktop: 186, mobile: 80 },
     { month: "Fevereiro", desktop: 305, mobile: 200 },
     { month: "Março", desktop: 237, mobile: 120 },
-    // { month: "Abril", desktop: 73, mobile: 190 },
-    // { month: "Maio", desktop: 209, mobile: 130 },
-    // { month: "Junho", desktop: 214, mobile: 140 },
+    { month: "Abril", desktop: 73, mobile: 190 },
+    { month: "Maio", desktop: 209, mobile: 130 },
+    { month: "Junho", desktop: 214, mobile: 140 },
   ];
 
   const chartConfig = {
@@ -23,7 +23,7 @@ const ChartOverview = () => {
       label: "Mobile",
       color: "hsl(var(--chart-2))",
     },
-  } satisfies ChartConfig
+  } satisfies ChartConfig;
 
   return (
     <Card className="w-full md::w-1/2 md:max-w-[600px] rounded-sm">
@@ -35,8 +35,11 @@ const ChartOverview = () => {
       </CardHeader>
 
       <CardContent>
-        <ChartContainer config={chartConfig} className="min-h-[200px]">
-          <BarChart data={chartData}>
+        <ChartContainer
+          config={chartConfig}
+          className="min-h-[200px] items-center justify-center"
+        >
+          <BarChart width={100} height={50} data={chartData}>
             <CartesianGrid vertical={false} />
             <XAxis
               dataKey={"month"}
